@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #ffffff;
+    --red: #ff0000;
+    --gray: #707070;
+    --light-black: #313131;
+    --black: #000000;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+header .navbar{
+    margin: 10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+header .navbar ul{
+    display: flex;
+    justify-content: space-between  ;
+    gap: 25px;
+}
+
+header .navbar li{
+    list-style: none;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .navbar .logo{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+main{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#info1 {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "Foto1 Foto1 Foto2 Foto2"
+    "Foto1 Foto1 Foto2 Foto2";
+    grid-template-rows: 50px 0.96fr 30px;
+    grid-template-columns: 10px 0.5fr;
+    
+}
+
+#info1 .Foto1{
+    grid-area: Foto1;
+}
+
+#info1 .Foto2{
+    grid-area: Foto2;
+}
+
+
+
+#info2 {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "Foto3 Foto4 Foto5 Foto6"
+    "Foto3 Foto4 Foto5 Foto6";
+    grid-template-rows: 50px 0.945fr 30px;
+    grid-template-columns: 20rem 0fr 20rem;
+    
+}
+
+#info2 .Foto3{
+    grid-area: Foto3;
+}
+
+#info2 .Foto4{
+    grid-area: Foto4;
+}
+
+#info2 .Foto5{
+    grid-area: Foto5;
+}
+
+#info2 .Foto6{
+    grid-area: Foto6;
+}
+
+
+#info3 {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "Foto7 Foto8 Foto9"
+    "Foto7 Foto8 Foto9";
+    grid-template-rows: 50px 0.96fr 30px;
+    grid-template-columns: 25rem 0.35fr;
+    
+}
+
+#info3 .Foto7{
+    grid-area: Foto7;
+}
+
+#info3 .Foto8{
+    grid-area: Foto8;
+}
+
+#info3 .Foto9{
+    grid-area: Foto9;
+}
+
+
+footer{
+    background-color: var(--black);
+}
+
+footer .footer-logo{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-logo p{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer .rights{
+    padding: 50px;
+    display: flex;
+    align-items: start;
+}
+
+footer .rights p{
+    color: var(--white);
+    font-size: 12px;
+}
